@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "451062141257",
+    "firebase_url": "https://salao-cc19d.firebaseio.com",
+    "project_id": "salao-cc19d",
+    "storage_bucket": "salao-cc19d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451062141257:android:0d37ee0b2b1762d2e9ca98",
+        "android_client_info": {
+          "package_name": "br.com.desafio.salao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451062141257-hce7pmpkt5j5994od9fj84r5sts2b8mt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqH9LZIP_NWbjgwlPem1fbLRccGc1duRw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451062141257-hce7pmpkt5j5994od9fj84r5sts2b8mt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

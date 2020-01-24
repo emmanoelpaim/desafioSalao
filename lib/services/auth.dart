@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:salao/models/user.dart';
+import 'package:salao/services/database.dart';
 
 class AuthService{
 
@@ -52,11 +53,14 @@ class AuthService{
 
   // register with email & password
 
-  Future registerWithEmailAndPassword(String email, String password) async {
+  Future registerWithEmailAndPassword(String email, String password,String name, String typeRegister) async {
     try{
       AuthResult  result = await _auth.createUserWithEmailAndPassword(email: email, password: password);
 
       FirebaseUser user = result.user;
+
+      // create new document for the user with the uid
+      await DatabaseService(uid: user.uid).updateUserData(name,typeRegister);
 
       return _userFromFirebaseUser(user);
     }catch(e){
